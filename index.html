@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+	    <meta charset="utf-8">
+	    <title>projet js</title>
+	    <link rel="stylesheet" href="css/style.css">
+
+	    <script>
+			function updateSlider(slideAmount) {
+		        var sliderDiv = document.getElementById("sliderAmount");
+		        sliderDiv.innerHTML = slideAmount;
+		    }
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="slider">
+
+			<input id="slide" type="range" min="100" max="20000" step="25" value="1" onchange="updateSlider(this.value)">
+			
+		</div><br/>
+
+		<div id="sliderAmount"></div>
+			
+		
+		<div class="table">
+			<img id="table" src="img/table.jpg">
+		</div>
+
+		<p id="tapisBot"></p>
+		<p id="jetonBot"></p>
+		<p id="tapisUser"></p>
+		<p id="jetonUser"></p>
+
+		<div id="decisions">
+		<!--
+			<button id="0">Passe </button>
+			<button id="1">Check </button>
+			<button id="2">Miser </button>
+			<button id="3">Payer </button>
+			<button id="4">Relancer</button>
+			-->
+		</div>
+
+		<img id="dealerUser" src="img/bouton.png">
+		<img id="dealerBot" src="img/bouton.png">
+
+		<p id="board"></p>
+		<p id="pot">Pot total :</p>
+		<p id="potValeur"></p>
+
+		<p id="mainUser"></p>
+		<p id="mainBot"></p>
+
+		<div id="aside"><h1>Résumé des actions :</h1></div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+
+		
+	</body>
+</html>
